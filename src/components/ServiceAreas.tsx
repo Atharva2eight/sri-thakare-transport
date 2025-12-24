@@ -19,9 +19,9 @@ const ServiceAreas = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
             {/* Origins */}
-            <div className="space-y-4">
+            <div className="w-full md:w-auto">
               <h3 className="font-display font-semibold text-xl text-foreground mb-6 flex items-center gap-2">
                 <MapPin className="h-5 w-5 text-accent" />
                 Pickup Locations
@@ -40,15 +40,15 @@ const ServiceAreas = () => {
             </div>
 
             {/* Arrow */}
-            <div className="hidden md:flex justify-center">
-              <div className="flex items-center gap-2 text-primary">
-                <div className="w-16 h-0.5 bg-primary" />
-                <ArrowRight className="h-8 w-8" />
+            <div className="flex items-center justify-center py-4 md:py-0">
+              <div className="flex items-center gap-2 text-primary rotate-90 md:rotate-0">
+                <div className="w-12 md:w-16 h-0.5 bg-primary" />
+                <ArrowRight className="h-6 w-6 md:h-8 md:w-8" />
               </div>
             </div>
 
             {/* Destination */}
-            <div className="md:col-span-1 md:-ml-8">
+            <div className="w-full md:w-auto md:flex-1 md:max-w-sm">
               <div className="p-8 bg-primary rounded-2xl text-center">
                 <h3 className="font-display font-bold text-2xl md:text-3xl text-primary-foreground mb-2">
                   Anywhere in India
