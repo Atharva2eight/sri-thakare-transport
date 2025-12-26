@@ -173,7 +173,7 @@
     }
   }
 
-  @keyframes scaleIn {
+@keyframes scaleIn {
     from {
       opacity: 0;
       transform: scale(0.95);
@@ -183,4 +183,8 @@
       transform: scale(1);
     }
   }
+}
+
+#lovable-badge {
+  display: none !important;
 }
